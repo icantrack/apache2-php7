@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt install software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 RUN apt search php7
-RUN sudo apt install php7.0-mysql
+RUN sudo apt install -y php7.0-mysql
 
 CMD apachectl -DFOREGROUND
 
